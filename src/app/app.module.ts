@@ -7,6 +7,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+let baseConfig = {
+  // Configure according to the environment
+  // locationStrategy: 'path'
+};
+let deepLinkConfig = {
+  links: [{
+    component: HomePage, name: 'Home', segment: 'home'
+  }]
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -14,7 +24,7 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, baseConfig, deepLinkConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
