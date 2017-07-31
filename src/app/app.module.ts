@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { GLIonic2EnvConfigurationModule } from 'gl-ionic2-env-configuration';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -24,6 +25,7 @@ let deepLinkConfig = {
   ],
   imports: [
     BrowserModule,
+    GLIonic2EnvConfigurationModule,
     IonicModule.forRoot(MyApp, baseConfig, deepLinkConfig)
   ],
   bootstrap: [IonicApp],
