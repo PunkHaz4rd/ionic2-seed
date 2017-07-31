@@ -5,7 +5,6 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
-
     "build:android:test": "ionic cordova build android --debug",
     "build:android:prod": "ionic cordova build android --prod --release --optimizejs --minifyjs --minifycss",
     "build:ios:test": "ionic cordova build ios --debug",
@@ -13,17 +12,13 @@
     "build:web:test": "ionic cordova build browser --debug",
     "build:web:prod": "ionic cordova build browser --prod --release --optimizejs --minifyjs --minifycss",
     "clean": "ionic-app-scripts clean",
-
     "e2e": "ionic-app-scripts build && protractor",
-
     "env-dev": "node copy-env-config.js --env dev",
     "env-preprod": "node copy-env-config.js --env pre-prod",
     "env-prod": "node copy-env-config.js --env prod",
-
     "lint": "ionic-app-scripts lint",
     "postinstall": "webdriver-manager update",
     "serve": "npm run env-dev | ionic-app-scripts serve"
-
   },
   "dependencies": {
     "@angular/common": "4.1.3",
@@ -63,6 +58,7 @@
     "body-parser": "^1.17.2",
     "connect": "^3.6.2",
     "express": "^4.15.3",
+    "ionic": "^3.6.0",
     "jasmine": "^2.6.0",
     "jasmine-spec-reporter": "^4.1.1",
     "method-override": "^2.3.9",
